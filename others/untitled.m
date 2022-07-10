@@ -1,0 +1,9 @@
+plot(Speedmph,StoppingDistance,'o')
+plot(Speedmph,StoppingDistance,'x')
+p=polyfit(Speedmph,StoppingDistance,1);
+p(1)
+p(2)
+f=@(x)p(1)*x+p(2);
+x=min(Speedmph)-1:01.1:max(Speedmph)+1;
+y=f(x);
+plot(Speedmph,StoppingDistance,'o',x,y)

@@ -1,0 +1,11 @@
+clear
+clc
+media=22;
+devS=3.5;
+n=20;
+media0=20.7;
+alpha=0.05;
+norminv(alpha,media,devS)
+norminv(alpha,media,sqrt(devS/n))
+norminv(alpha,media0,devS)
+norminv(alpha,media0,sqrt(devS/n))
